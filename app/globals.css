@@ -43,6 +43,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Custom color variables */
+  --dark-color: #151515;
+  --light-color: #52525b;
+  --light-orange: #fca99b;
+  --light-blue: #7688db;
+  --dark-blue: #6c7fd8;
+  --dark-text: #686e7d;
+  --light-bg: #f8f8fb;
 }
 
 .dark {
@@ -105,6 +114,7 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -146,4 +156,33 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom utility classes */
+.text-lightColor {
+  color: var(--light-color);
+}
+
+.text-darkColor {
+  color: var(--dark-color);
+}
+
+.text-lightOrange {
+  color: var(--light-orange);
+}
+
+.text-lightBlue {
+  color: var(--light-blue);
+}
+
+.text-darkBlue {
+  color: var(--dark-blue);
+}
+
+.text-darkText {
+  color: var(--dark-text);
+}
+
+.bg-lightBg {
+  background-color: var(--light-bg);
 }
