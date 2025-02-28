@@ -156,33 +156,35 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+  .hoverEffect {
+    @apply transition-all ease-in-out duration-300 cursor-pointer;
+  }
+  /* Custom utility classes */
+  .text-lightColor {
+    color: var(--light-color);
+  }
 
-/* Custom utility classes */
-.text-lightColor {
-  color: var(--light-color);
-}
+  .text-darkColor {
+    color: var(--dark-color);
+  }
 
-.text-darkColor {
-  color: var(--dark-color);
-}
+  .text-lightOrange {
+    color: var(--light-orange);
+  }
 
-.text-lightOrange {
-  color: var(--light-orange);
-}
+  .text-lightBlue {
+    color: var(--light-blue);
+  }
 
-.text-lightBlue {
-  color: var(--light-blue);
-}
+  .text-darkBlue {
+    color: var(--dark-blue);
+  }
 
-.text-darkBlue {
-  color: var(--dark-blue);
-}
+  .text-darkText {
+    color: var(--dark-text);
+  }
 
-.text-darkText {
-  color: var(--dark-text);
-}
-
-.bg-lightBg {
-  background-color: var(--light-bg);
+  .bg-lightBg {
+    background-color: var(--light-bg);
+  }
 }
