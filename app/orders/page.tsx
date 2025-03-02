@@ -1,4 +1,4 @@
-import { requiredUser } from "@/hooks/requiredUser";
+import { requiredUser } from "@/hooks/required-user";
 
 export default async function OrdersPage() {
   await requiredUser();

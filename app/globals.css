@@ -52,6 +52,9 @@
   --dark-blue: #6c7fd8;
   --dark-text: #686e7d;
   --light-bg: #f8f8fb;
+
+  /* font setup */
+  --font-raleway: "Raleway", sans-serif;
 }
 
 .dark {
@@ -155,6 +158,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-raleway);
   }
   .hoverEffect {
     @apply transition-all ease-in-out duration-300 cursor-pointer;
