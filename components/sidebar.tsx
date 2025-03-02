@@ -1,9 +1,11 @@
 import { motion } from "motion/react";
 import { Logo } from "./logo";
-import { Link, X } from "lucide-react";
+import { X } from "lucide-react";
 import { headerData } from "@/constants";
 import { usePathname } from "next/navigation";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import Link from "next/link";
+import { SocialMedia } from "./social-media";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -35,19 +37,20 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           </button>
         </div>
         <div className="flex flex-col gap-3.5 text-base font-semibold tracking-wide">
-          {headerData?.map((item) => (
+          {headerData.map((item) => (
             <Link
               onClick={onClose}
-              key={item?.title}
-              href={item?.href}
+              key={item.title}
+              href={item.href}
               className={`hover:text-white hoverEffect w-24 ${
-                pathname === item?.href && "text-white"
+                pathname === item.href && "text-white"
               }`}
             >
-              {item?.title}
+              {item.title}
             </Link>
           ))}
         </div>
+        <SocialMedia />
       </motion.div>
     </div>
   );
