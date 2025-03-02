@@ -12,8 +12,9 @@ const raleway = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tulos Ecommerce app for shoppers",
-  description: "An Ecommerce app for education purposes",
+  title: "Tulos E-Commerce - Your Ultimate Shopping Destination",
+  description:
+    "Experience a modern, user-friendly e-commerce platform designed for both learning and seamless shopping. Browse through an extensive range of products and enjoy a secure, hassle-free shopping journey.",
 };
 
 export default function RootLayout({
