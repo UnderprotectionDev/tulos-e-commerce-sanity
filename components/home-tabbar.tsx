@@ -13,7 +13,9 @@ export function HomeTabbar({ selectedTab, onTabSelect }: HomeTabbarProps) {
         {productType.map((item) => (
           <button
             key={item.title}
-            onClick={() => onTabSelect(item.title)}
+            onClick={() => {
+              onTabSelect(item.title);
+            }}
             className={`border border-[var(--dark-color)] px-4 py-1.5 md:px-6 md:py-2 rounded-full hover:bg-[var(--dark-color)] hover:text-white hoverEffect ${selectedTab === item.title && "bg-[var(--dark-color)] text-white"}`}
           >
             {item?.title}
