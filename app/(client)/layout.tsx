@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import localFont from "next/font/local";
 
 const raleway = localFont({
-  src: "../public/fonts/Raleway.woff2",
+  src: "../../public/fonts/Raleway.woff2",
   variable: "--font-raleway",
   weight: "100 900",
 });
